@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "custom-font" !important;
+    src: url(/../hello-git/the_bigger_the_better/The\ Bigger\ The\ Better.ttf);
+}
+
+body {
+    background-color: aqua;
+}
+
+header {
+    color: rgb(39, 4, 72);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+main section {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    font-size: 20px;
+}
+
+main section a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgb(39, 4, 72);
+}
+
+main section a:hover {
+    font-size: 90%;
+    color: blueviolet;
+}
+
+.row1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
