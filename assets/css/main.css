@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: "custom-font" !important;
-    src: url(/../hello-git/the_bigger_the_better/The\ Bigger\ The\ Better.ttf);
+    font-family: custom-font;
+    src: url(/the_bigger_the_better/The\ Bigger\ The\ Better.ttf);
 }
 
 body {
     background-color: aqua;
+    font-family: custom-font;
 }
 
 header {
