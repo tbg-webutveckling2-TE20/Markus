@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>grunder_1</title>
+    </head>
+    <body>
+        
+        <div>
+            <input type="text" size="10" id="copy_text">
+            <button type="button" id="copy_button">Kopiera</button>
+            <input type="text" size="10" id="paste_text">
+
+            <script>
+                document.getElementById('copy_button').addEventListener('click', copy);
+
+                function copy() {
+                    var copy = document.getElementById('copy_text').value;
+                    document.getElementById('paste_text').value = copy;
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>grunder_4</title>
+    </head>
+    <body>
+        
+        <div>
+            <input type="text" size="10" id="decimal1">
+            <input type="text" size="10" id="decimal2">
+            <input type="text" size="10" id="decimal3">
+            <button type="button" id="avarage_value">Medelvärda talen</button>
+
+            <div id="empty_box"></div>
+
+
+            <script>
+                document.getElementById('avarage_value').addEventListener('click', Avarage);
+
+                function Avarage() {
+                    var decimal_1 = parseInt(document.getElementById('decimal1').value);
+                    var decimal_2 = parseInt(document.getElementById('decimal2').value);
+                    var decimal_3 = parseInt(document.getElementById('decimal3').value);
+
+                    var constant = 3
+                    var avarage = (decimal_1 + decimal_2 + decimal_3) / constant;
+                    var avaraged = document.getElementById('empty_box').innerHTML = avarage;
+
+                    console.log(avarage)
+                }
+            </script>
+        </div>
+    </body>
+</html>

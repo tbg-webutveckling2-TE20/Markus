@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>grunder_2</title>
+    </head>
+    <body>
+        
+        <div>
+            <input type="text" size="10" id="text1">
+            <input type="text" size="10" id="text2">
+            <button type="button" id="add_texts">Lägg ihop</button>
+            <input type="text" size="10" id="added_texts">
+
+
+            <script>
+                document.getElementById('add_texts').addEventListener('click', add);
+
+                function add() {
+                    var text_1 = document.getElementById('text1').value;
+                    var text_2 = document.getElementById('text2').value;
+
+                    var added = document.getElementById('added_texts').value = text_1 + text_2;
+                }
+            </script>
+        </div>
+    </body>
+</html>

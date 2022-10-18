@@ -10,6 +10,12 @@ body {
     font-family: custom-font;
 }
 
+body img {
+    height: 100%;
+    width: 100%;
+    margin: -8px;
+}
+
 header {
     color: rgb(39, 4, 72);
     text-align: center;

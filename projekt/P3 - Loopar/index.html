@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="knapp">
+        <input type="text" size="10" id="loop1text" value="0">
+        <button type="button" id="loop1button">Visa</button>
+
+        <input type="text" size="10" id="loop2text" value="10">
+        <button type="button" id="loop2button">Show</button>
+
+        <div id="loop1div"></div>
+        <div id="loop2div"></div>
+
+
+        <script>
+            document.getElementById('loop1button').addEventListener('click', loop1);
+            document.getElementById('loop2button').addEventListener('click', loop2);
+
+
+            function loop1() {
+                var text = document.getElementById("loop1text").value;
+                var tal = parseInt(text);
+                document.getElementById("loop1div").innerHTML = "";
+
+                var x = 0;
+                while (x < tal) {
+                    if (x % 2 == 0) { 
+                    document.getElementById("loop1div").innerHTML += "Varv: " + x + "<br>";
+                    x++;
+                    }
+                }
+            }
+
+            function loop2() {
+                var text = document.getElementById("loop2text").value;
+                var tal = parseInt(text);
+                document.getElementById("loop2div").innerHTML = "";
+
+                var x = 10;
+                while (x > tal) {
+                    document.getElementById("loop2div").innerHTML += "Varv: " + x + "<br>";
+                    x--;
+                }
+            }
+        </script>
+
+    </div>
+
+
+
+</html>

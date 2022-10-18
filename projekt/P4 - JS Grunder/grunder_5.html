@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>grunder_5</title>
+    </head>
+    <body>
+        
+        <div>
+            <input type="number" size="10" id="value1">
+            <input type="number" size="10" id="value2">
+            <button type="button" id="percentage_value">Procenta talen</button>
+
+            <div type="number" id="empty_div"></div>
+
+
+            <script>
+                document.getElementById('percentage_value').addEventListener('click', percent);
+
+                function percent() {
+                    var value_1 = document.getElementById('value1').valueAsNumber;
+                    var value_2 = document.getElementById('value2').valueAsNumber * 0.01;
+
+                    var percentage = document.getElementById('empty_div').innerHTML = value_1-(value_1*value_2);
+
+                }
+            </script>
+        </div>
+    </body>
+</html>
